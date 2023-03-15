@@ -9,16 +9,17 @@ public class WhenWorkingWithFloatingPointNumbers {
 
     //
     // Exercise 1: Convert 27 degrees Celcius to Farenheit
-    // The equation is: farenheit = (9 / 5) * celcius + 32
+    // The equation is: fahrenheit = (9 / 5) * celcius + 32
     //
     @Test
-    public void convertToFarenheit() {
-        double celcius = 27.0d;
-        double farenheit = 0.0d;
+    public void convertToFahrenheit() {
+        final double celcius = 27.0d;
+        double fahrenheit;
 
-        // TODO: Use a floating point calculation to calculate the farenheit equivalent of the celcius value.
+        // Use a floating point calculation to calculate the Fahrenheit equivalent of the Celcius value.
+        fahrenheit = 9 * celcius / 5 + 32;
 
-        assertThat(farenheit, equalTo(80.6));
+        assertThat(fahrenheit, equalTo(80.6));
     }
 
     //
@@ -27,10 +28,11 @@ public class WhenWorkingWithFloatingPointNumbers {
     //
     @Test
     public void convertMetersToFeet() {
-        int weightInKilograms = 50;
-        double weightInPounds = 0;
+        final int weightInKilograms = 50;
+        double weightInPounds;
 
         // TODO: Use a floating point calculation to calculate the correct weight in pounds
+        weightInPounds = weightInKilograms * 2.20462;
 
         assertThat(weightInPounds, equalTo(110.231));
 
