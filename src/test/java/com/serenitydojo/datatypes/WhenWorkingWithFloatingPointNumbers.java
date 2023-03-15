@@ -14,10 +14,10 @@ public class WhenWorkingWithFloatingPointNumbers {
     @Test
     public void convertToFahrenheit() {
         final double celcius = 27.0d;
-        double fahrenheit = 0.0d;
+        double fahrenheit;
 
         // Use a floating point calculation to calculate the Fahrenheit equivalent of the Celcius value.
-        fahrenheit = celcius * (9 /5) + 32;
+        fahrenheit = 9 * celcius / 5 + 32;
 
         assertThat(fahrenheit, equalTo(80.6));
     }
